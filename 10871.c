@@ -9,6 +9,7 @@ int main()
     {
         scanf("%d", &a);
         if (a < x)
+        
             printf("%d ", a);
     }
 }
