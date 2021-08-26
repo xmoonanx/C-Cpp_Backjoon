@@ -14,6 +14,6 @@ int main(){
         cnt++;
         if(d==result)break;
     }
-    printf("%d", cnt);
 
+    printf("%d", cnt);
 }
