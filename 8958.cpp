@@ -1,9 +1,10 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main(){
     int num; 
-    char rec[80];
+    string rec;
     int cnt=0, grd=0;
 
     cin >> num;
@@ -11,18 +12,14 @@ int main(){
     for(int i = 0; i < num; i++){
         cin >> rec;
         
-        for(int j = 0; j < 80; j++){
-            if(rec[j]==0){
-                grd = 0;
-                break;
-            }
+        for(int j = 0; j < rec.length(); j++){
             if(rec[j] == 'O'){
-                grd += 1;
-                cnt += grd;
+                grd++;
             }
             else grd = 0;
+            cnt += grd;
         }
     cout << cnt << "\n";
-    cnt = 0;
+    cnt = grd = 0;
     }
 }
