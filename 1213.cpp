@@ -31,7 +31,7 @@ int main()
         }
     }
 
-    if (cnt > 1) //홀수 2개 이상인 경우
+    if (cnt > 1) //홀수가 2개 이상
     {
         cout << "I'm Sorry Hansoo";
     }
